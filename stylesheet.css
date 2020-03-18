@@ -1,0 +1,617 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+}
+header{
+    width:100%;
+    height: 60px;
+    left:0;
+}
+.logo{
+    height:24px;
+    padding: 17px 0 0 18px;
+}
+.info-button{
+    float:right;
+}
+hr{
+    width: 240px;
+    margin: 10px auto 12px auto;
+    padding: 0;
+    height: 0;
+    border: none;
+    text-align: center;
+
+}
+.main{
+    margin: 0 auto;
+    padding: 0;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    transform: translateY(-40%) translateX(-10%);
+}
+#wrap .main{
+    top: 40%;
+    left: 35%;
+    transform: translateY(-40%) translateX(-35%);
+}
+#wrap{
+    background:url(https://kempene-english.jp/ad/temp/img/copy.jpg);
+    background-size:cover;
+    background-position: bottom center;
+    height:740px;
+    margin:0;
+    padding:0;
+    width:100%;
+    border-bottom:5px solid #d73143;
+    position: relative;
+
+}
+img.main-photo {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+.link{
+    text-align: center;
+}
+.btn{
+    text-align:center;
+    display: inline-block;
+    color:#fff;
+    text-decoration:none;
+    line-height: 100%;
+    background: linear-gradient(to right, #2156f5, #8c45fb);
+    border-radius:60px;
+}
+.badge{
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    position: absolute;
+    bottom: 1%;
+    right: 3%;
+    transform: translateY(-1%) translateX(-3%);
+}
+
+
+.content2-wrapper{
+    padding:75px 0;
+    background-color:#f3f6f8;
+    margin:0 0 75px 0;
+}
+.content2{
+    width:1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content2-photo{
+    width: 48%;
+}
+.text-box{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.memo-img{
+    width:100%;
+}
+.parenthesis{
+    padding: 20px 50px 5px 50px;
+    margin:0;
+    box-sizing:border-box;
+    position: relative;
+    
+}
+
+
+.parenthesis::before,
+.parenthesis::after{
+    content:'';
+    top:0;
+    width:30px;
+    height:100%;
+    border-top: 1px solid #555;
+    border-bottom: 1px solid #555;
+    box-sizing:border-box;
+    position:absolute;
+}
+
+.parenthesis::before{
+    left:0;
+    border-left: 1px solid #555;
+}
+
+.parenthesis::after{
+    right:0;
+    border-right: 1px solid #555;
+}
+.size1{
+    width:480px;
+    margin:45px auto 0 auto;
+    padding: 30px 0;
+    font-size: 21px;
+    font-weight: bold;
+}
+.sub-Title{
+    color:#d73143;
+    font-size:48px;
+    text-align:center;
+    font-family: 'Roboto Condensed', sans-serif;
+    
+}
+.first{
+    border-top:1px solid red;
+    width:240px;
+}
+.sub-Text{
+    text-align:center;
+    color:red;
+    margin:0 0 30px 0;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.feature{
+    /* 山崎追加 inline-blockで横並び*/
+    width: 31.5%;
+    margin: 0;
+    padding: 0;
+}
+.feature-Box{
+    width:1200px;
+    display:flex;
+    padding: 0 0 75px 0;
+    margin: 0 auto;
+    justify-content: space-between;
+
+}
+.feature-Number{
+    font-size:25px;
+    padding: 5px 0 15px 0;
+    font-weight: bold;
+    line-height: 100%;
+    text-align: center;
+
+}
+.feature-Number span{
+    padding: 5px 14px;
+    color: #fff;
+    background-color: #d73143;
+    border-radius: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.feature-Title{
+    font-size:24px;
+    text-align:center;
+}
+
+.feature-photo{
+    width:100%;
+}
+
+.feature-digits{
+    text-align:center;
+    color: #ff9898;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* 山崎追加 inline-blockで横並び*/
+.text-wrapper {
+    width: 48%;
+    position: relative;
+    
+}
+.contact{
+    text-align:center;
+    color:#fff;
+    background-color:#eb4753;
+    margin: 30px 0 0 0;
+    padding: 60px 0 65px 0;
+}
+.contact-title{
+    font-size:24px;
+}
+.contact-title span{
+    padding:0 0 5px 0;
+    border-bottom:solid 3px #fff;
+}
+.contact-text{
+    font-size:18px;
+    margin: 25px 0 0 2px;
+    letter-spacing: 2px;
+    line-height: 180%;
+}
+.contact a{
+    color:#fff;
+    text-decoration: none;
+}
+.caution{
+    font-size:12px;
+    margin: 25px 0 0 0;
+}
+.btn-2{
+    display: inline-block;
+}
+.size2{
+    width: 480px;
+    margin: 15px auto 0 auto;
+    padding: 30px 0;
+    font-size: 21px;
+    font-weight: bold;
+    border-radius: 60px;
+}
+.fact{
+    margin:0;
+    background-color: #f3f6f8;
+    padding: 75px 0 45px 0;
+}
+.fact ul li:nth-child(odd){
+    flex-direction: row-reverse;
+}
+.fact ul{
+    width: 1200px;
+    margin: 0 auto;
+    padding:0;
+}
+.fact ul li {
+    list-style: none;
+    display: flex;
+    padding: 0 0 45px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.fact ul li .txt{
+    width: 48%;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.fact ul li .fact-photo{
+    width: 48%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.txt-title{
+    margin: 0;
+    padding: 0 0 15px 0;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 1px;
+}
+.txt-head{
+    color: #fa5d5d;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 5px;
+    font-style: oblique;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 0 0 10px 0;
+}
+.photo img{
+    width:100%;
+}
+.result{
+    text-align:center;
+    background:url("https://kempene-english.jp/ad/temp/img/img_04.jpg");
+    background-size:cover;
+    width:100%;
+    height:600px;
+    color:white;
+    margin: 0 0 75px 0;
+    position:relative;
+}
+p{
+    font-size: 16px;
+    line-height: 180%;
+    letter-spacing: 1px;
+}
+.result-title{
+    font-size: 48px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.sub{
+    margin: 0 0 30px 0;
+    padding: 0;
+    font-size: 18px;
+}
+.message{
+    width:100%;
+    top:50%;
+    left:50%;
+    position:absolute;
+    transform: translateY(-50%) translateX(-50%);
+}
+.border{
+    border-top: 1px solid #fff;
+    width: 240px;
+}
+.voice-box{
+    width: 1200px;
+    margin: 0 auto 60px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.voice-title{
+    font-size: 21px;
+    padding: 20px 0 5px 0;
+    border-bottom: 1px solid #d73143;
+    text-align: center;
+    margin: 0 0 15px 0;
+}
+.voice-name{
+    text-align: center;
+    color: #666;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.voice-text{
+    font-size: 16px;
+    line-height: 180%;
+    letter-spacing: 1px;
+}
+
+.voice-photo{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.voice-photo img{
+    border-radius: 50%;
+    width: 55%;
+}
+.voices{
+    width: 31%;
+    margin: 0;
+    padding: 0;
+}
+.course{
+    text-align:center;
+}
+.course-title{
+    font-size: 24px;
+    padding: 0 0 25px 0;
+}
+tbody{
+    text-align:center;
+}
+.course-table{
+    width: 720px;
+    margin: 0 auto;
+    padding: 0;
+}
+th{
+    width: 200px;
+    font-size: 16px;
+    color: #fff;
+    padding: 10px 0;
+    background: #d73143;
+    letter-spacing: 1px;
+}
+td{
+    padding: 10px 0 10px 20px;
+    font-size: 18px;
+    text-align:left;
+    border-bottom: solid 1px #ccc;
+}
+.contact-btn{
+    text-align:center;
+}
+.contact-btn a {
+    color: #d73143;
+    text-decoration: none;
+}
+.button{
+    background: #fff;
+    border: solid 2px #d73143;
+    text-align: center;
+    display:inline-block;
+}
+.pattern1{
+    margin: 30px 0 15px 0;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 30px;
+    line-height: 100%;
+}
+.space{
+    margin: 75px 0 0 0;
+}
+.lecturer{
+    width: 720px;
+    margin: 0 auto 75px auto;
+    padding: 0;
+}
+.lecturer-photo img{
+    width:320px;
+    border-radius:50%;
+}
+.lecturer-photo{
+    text-align: center;
+}
+.lecturer-eng{
+    margin: 0;
+    padding: 15px 0 0 0;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: #d73143;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.lecturer-jp{
+    margin: 0;
+    padding: 10px 0 5px 0;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 100%;
+    letter-spacing: 1px;
+    /* text-align: center; */
+}
+.lecturer-jp span{
+    font-size: 14px;
+    font-weight: normal;
+}
+.lecturer-sub{
+    color:#D73443;
+    font-size:20px;
+    border-left:1px solid #D73443;
+    border-bottom:1px solid #D73443;
+    padding: 10px 0 10px 15px;
+    margin: 30px 0 0 0;
+    line-height: 100%;
+    letter-spacing: 1px;
+}
+.lecturer ul{
+    padding: 0 0 0 20px;
+    margin: 15px 0 0 0;
+}
+.lecturer li{
+    padding: 0 0 5px 0;
+    letter-spacing: 1px;
+}
+.lecturer-list{
+    text-align:left;
+}
+footer ul{
+    font-size:18px;
+    padding: 2px 0;
+    margin: 0;
+}
+footer ul li{
+    list-style: none;
+    padding: 0 5px;
+    font-size: 12px;
+    display:inline;
+    letter-spacing: 1px;
+}
+footer ul li a{
+    text-decoration: none;
+    color: #666;
+}
+#footer-box{
+    text-align: center;
+    padding: 25px 0 0 0;
+    border-top: solid 1px #d73143;
+}
+#copyright{
+    font-size: 12px;
+    text-align:center;
+    color:#999;
+    padding: 10px 0 30px 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.top{
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    border-top:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+    padding: 20px 20px;
+}
+.top li{
+    list-style-type: none;
+    display:inline;
+}
+.top li a {
+    color:#666;
+    text-decoration: none;
+}
+.title{
+    font-size:60px;
+    text-align:center;
+    margin:60px;
+}
+#wrapper{
+    margin:0;
+    padding: 50px 90px 75px 90px;
+    background: #eee;
+}
+.container{
+    margin: 0;
+    padding: 75px 0 1px 0;
+    background: #fff;
+}
+.main-content{
+    width: 640px;
+    margin: 0 auto 90px auto;
+    padding: 0;
+}
+.sub-head{
+    color:#d73143;
+    font-size:25px;
+    text-align:center;
+    letter-spacing: 5px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.sub-head-jp{
+    font-size:14px;
+    text-align:center;
+    margin: 5px 0 45px 0;
+}
+.law-table tr th{
+    border-bottom:1px solid #D73343;
+    color:black;
+    background-color:white;
+    text-align:left;
+}
+.law-table th{
+    font-size: 16px;
+    padding: 15px 0;
+    letter-spacing: 1px;
+}
+.law-table td{
+    font-size: 16px;
+    padding: 15px 0 15px 20px;
+    letter-spacing: 1px;
+    line-height: 160%;
+}
+.contact-table{
+    width:100%;
+}
+.contact-head{
+    background-color:#fff;
+    color:black;
+    border-bottom: solid 1px #ccc;
+    text-align:left;
+    width: 200px;
+    font-size: 16px;
+    padding: 15px 15px 5px 0;
+    line-height: 180%;
+    letter-spacing: 1px;
+}
+.required{
+    background: #d73143;
+    font-size: 12px;
+    color:#fff;
+    padding: 1px 2px 2px 2px;
+}
+.contact-input{
+    padding: 15px 0 5px 5px;
+    border-bottom:none;
+}
+input[type="text"] {
+    width:100%;
+}
+textarea{
+    width:100%;
+}
+input, textarea, select{
+    padding: 10px;
+    border: solid 1px #ccc;
+    font-size: 16px;
+    border-radius: 3px;
+    box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5);
+    box-sizing: border-box;
+    -webkit-appearance: none;
+}
