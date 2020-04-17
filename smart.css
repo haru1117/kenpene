@@ -7,9 +7,13 @@ body{
 }
 header{
     width:100%;
-    height: 60px;
+    height: 48px;
     left:0;
+    margin: 0;
+    padding: 0;
+    top: 0;
     z-index: 9990;
+    position:absolute;
 }
 header nav{
     font-size: 18px;
@@ -17,13 +21,13 @@ header nav{
     letter-spacing: 1px;
 }
 .logo{
-    padding: 17px 0 0 18px;
-}
-.sp {
-    display:none;
+    margin: 0;
+    padding: 9px 0 0 15px;
+    float: left;
 }
 .logo img{
-    height:24px;
+    height:20px;
+    vertical-align: bottom;
 }
 .info-button{
     float:right;
@@ -46,15 +50,18 @@ hr{
     transform: translateY(-40%) translateX(-10%);
 }
 #wrap .main{
+    margin: 0 20px;
+    padding: 0;
+    position: absolute;
     top: 40%;
-    left: 35%;
-    transform: translateY(-40%) translateX(-35%);
+    left: 0;
+    transform: translateY(-40%) translateX(0);
 }
 #wrap{
-    background:url(https://kempene-english.jp/ad/temp/img/copy.jpg);
+    background:url(https://kempene-english.jp/ad/temp/img/copy_sp.jpg);
     background-size:cover;
-    background-position: bottom center;
-    height:740px;
+    background-position: bottom right;
+    height:500px;
     margin:0;
     padding:0;
     width:100%;
@@ -62,17 +69,16 @@ hr{
     position: relative;
 
 }
-.sp-photo{
+.pc-photo{
     display:none;
 }
-.pc-photo{
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
+.sp-photo img {
+    width: 55%;
 }
 
 .link{
-    text-align: center;
+    margin:0;
+    padding:0;
 }
 .btn{
     text-align:center;
@@ -84,12 +90,9 @@ hr{
     background: linear-gradient(to right, #2156f5, #8c45fb);
     border-radius:60px;
 }
-.btn:hover {
-    box-shadow:0 0 0;
-    background:-moz-linear-gradient(left, #3d52f7, #a841fd);
-    background:-webkit-linear-gradient(left, #3d52f7, #a841fd);
-    background:linear-gradient(to right, #3d52f7, #a841fd);
-    }
+.badge img{
+    width: 50%;
+}
 .badge{
     margin: 0;
     padding: 0;
@@ -103,42 +106,29 @@ hr{
 
 
 .content2-wrapper{
-    padding:75px 0;
-    background-color:#f3f6f8;
-    margin:0 0 75px 0;
+    margin: 0 0 45px 0;
+    padding: 30px 20px;
+    background-color: #f3f6f8;
 }
 .content2{
-    width:1200px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column-reverse;
-    flex-wrap:wrap;
-    justify-content: space-between;
 }
-@media screen and (min-width: 1140px) {
-    .content2 {
-        flex-direction:row;
-    }
-}
+
 .content2-photo{
-    width: 48%;
+    width: 100%;
 }
 .text-box{
     width: 100%;
-    margin: 20px;
+    margin: 0;
     padding: 0;
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%); */
 }
 
 .memo-img{
     width:100%;
 }
 .parenthesis{
-    padding: 20px 50px 5px 50px;
-    margin:0;
+    padding: 20px 30px 5px 30px;
+    margin-bottom:20px;
     box-sizing:border-box;
     position: relative;
     
@@ -167,19 +157,16 @@ hr{
     border-right: 1px solid #555;
 }
 .size1{
-    width:480px;
-    margin:45px auto 0 auto;
-    padding: 30px 0;
-    font-size: 21px;
+    width:55%;
+    margin:20px auto 0 0;
+    padding: 20px 0;
+    font-size: 14px;
     font-weight: bold;
 }
 .sub-Title{
     color:#d73143;
-    font-size:48px;
+    font-size:40px;
     text-align:center;
-    font-weight: bold;
-    line-height: 100%;
-    letter-spacing: 1px;
     font-family: 'Roboto Condensed', sans-serif;
     
 }
@@ -196,21 +183,16 @@ hr{
 }
 
 .feature{
-    /* 山崎追加 inline-blockで横並び*/
-    width: 31.5%;
     margin: 0;
-    padding: 0;
+    padding: 0 0 30px 0;
 }
-.feature-Box{
-    width:1200px;
-    display:flex;
-    padding: 0 0 75px 0;
-    margin: 0 auto;
-    justify-content: space-between;
 
+.feature-Box{
+    margin: 0 20px;
+    padding: 0 0 30px 0;
 }
 .feature-Number{
-    font-size:25px;
+    font-size:18px;
     padding: 5px 0 15px 0;
     font-weight: bold;
     line-height: 100%;
@@ -218,7 +200,7 @@ hr{
 
 }
 .feature-Number span{
-    padding: 5px 14px;
+    padding: 5px 12px;
     color: #fff;
     background-color: #d73143;
     border-radius: 30px;
@@ -226,8 +208,12 @@ hr{
 }
 
 .feature-Title{
-    font-size:24px;
-    text-align:center;
+    margin: 0;
+    padding: 0 0 15px 0;
+    font-size: 125%;
+    font-weight: bold;
+    line-height: 140%;
+    text-align: center;
 }
 
 .feature-photo{
@@ -242,7 +228,6 @@ hr{
 
 /* 山崎追加 inline-blockで横並び*/
 .text-wrapper {
-    width: 48%;
     position: relative;
     
 }
@@ -250,43 +235,42 @@ hr{
     text-align:center;
     color:#fff;
     background-color:#eb4753;
-    margin: 30px 0 0 0;
-    padding: 60px 0 65px 0;
+    margin:0;
+    padding: 45px 20px;
 }
 .contact-title{
-    font-size:24px;
+    font-size:19px;
 }
 .contact-title span{
     padding:0 0 5px 0;
     border-bottom:solid 3px #fff;
 }
 .contact-text{
-    font-size:18px;
-    line-height: 180%;
+    font-size:16px;
     margin: 25px 0 0 2px;
-    letter-spacing: 2px;
     line-height: 180%;
+}
+.pc{
+    display:none;
 }
 .contact a{
     color:#fff;
     text-decoration: none;
 }
 .contact-input textarea{
-    width:420px;
+    width:100%;
     height:202px;
 }
-.caution {
-    font-size:12px;
+.caution{
     margin: 25px 0 0 0;
-    padding: 0;
-    line-height: 160%;
-    letter-spacing: 1px;
+    font-size: 12px;
+    text-align:left;
 }
 .btn-2{
     display: inline-block;
 }
 .size2{
-    width: 480px;
+    width: 100%;
     margin: 15px auto 0 auto;
     padding: 30px 0;
     font-size: 21px;
@@ -296,44 +280,34 @@ hr{
 .fact{
     margin:0;
     background-color: #f3f6f8;
-    padding: 75px 0 45px 0;
-}
-.fact ul li:nth-child(odd){
-    flex-direction: row-reverse;
+    padding: 45px 20px 20px 20px;
 }
 .fact ul{
-    width: 1200px;
     margin: 0 auto;
     padding:0;
 }
 .fact ul li {
     list-style: none;
-    display: flex;
     padding: 0 0 45px 0;
-    justify-content: space-between;
     align-items: center;
 }
 .fact ul li .txt{
-    width: 48%;
     margin: 0;
     padding:0;
     box-sizing: border-box;
 }
 .fact ul li .fact-photo{
-    width: 48%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 .fact-photo img{
-    width: 100%;
+    width:100%;
 }
 .txt-title{
     margin: 0;
-    padding: 0 0 15px 0;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 150%;
-    letter-spacing: 1px;
 }
 .txt-head{
     color: #fa5d5d;
@@ -349,22 +323,25 @@ hr{
 }
 .result{
     text-align:center;
-    background:url("https://kempene-english.jp/ad/temp/img/img_04.jpg");
+    background:url("https://kempene-english.jp/ad/temp/img/img_04sp.jpg");
     background-size:cover;
-    background-position:center;
+    background-position: center center;
     width:100%;
-    height:600px;
+    height:500px;
     color:white;
     margin: 0 0 75px 0;
     position:relative;
 }
+.result p{
+    text-align: left;
+    margin: 15px 30px;
+}
 p{
     font-size: 16px;
-    line-height: 180%;
-    letter-spacing: 1px;
+    line-height: 160%;
 }
 .result-title{
-    font-size: 48px;
+    font-size: 40px;
     font-family: 'Roboto Condensed', sans-serif;
 }
 .sub{
@@ -384,27 +361,27 @@ p{
     width: 240px;
 }
 .voice-box{
-    width: 1200px;
-    margin: 0 auto 60px auto;
-    display: flex;
-    justify-content: space-between;
+    margin: 0;
+    padding: 0 20px 15px 20px;
 }
 .voice-title{
-    font-size: 21px;
-    padding: 20px 0 5px 0;
-    border-bottom: 1px solid #d73143;
+    margin: 0 0 10px 0;
+    padding: 15px 0 5px 0;
+    font-size: 120%;
+    font-weight: bold;
+    line-height: 150%;
     text-align: center;
-    margin: 0 0 15px 0;
+    border-bottom: 1px solid #d73143;
 }
 .voice-name{
     text-align: center;
     color: #666;
-    font-size: 16px;
+    font-size: 12.8px;
     letter-spacing: 1px;
 }
 .voice-text{
-    font-size: 16px;
-    line-height: 180%;
+    font-size: 12.8px;
+    line-height: 28.8px;
     letter-spacing: 1px;
 }
 
@@ -415,47 +392,33 @@ p{
 }
 .voice-photo img{
     border-radius: 50%;
-    width: 55%;
+    width: 50%;
 }
 .voices{
-    width: 31%;
     margin: 0;
-    padding: 0;
-}
-.course{
-    text-align:center;
+    padding: 0 0 20px 0;
 }
 .course-title{
-    margin: 0;
-    padding: 0 0 25px 0;
     font-size: 24px;
-    font-weight: bold;
-    line-height: 150%;
-    letter-spacing: 1px;
-    text-align: center;
-}
-tbody{
+    padding: 0 0 25px 0;
     text-align:center;
 }
 .course-table{
-    width: 720px;
-    margin: 0 auto;
+    margin: 0 20px;
     padding: 0;
 }
 th{
-    width: 200px;
+    width: 100px;
     font-size: 16px;
     color: #fff;
-    line-height:24px;
     padding: 10px 0;
     background: #d73143;
     letter-spacing: 1px;
 }
 td{
-    padding: 10px 0 10px 20px;
-    font-size: 18px;
-    letter-spacing:1px;
-    text-align:left;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px 0 10px 10px;
     border-bottom: solid 1px #ccc;
 }
 .contact-btn{
@@ -472,7 +435,6 @@ td{
     display:inline-block;
     font-weight: bold;
     line-height: 100%;
-    letter-spacing: 1px;
     text-decoration: none;
     text-align: center;
     color: #d73143;
@@ -480,9 +442,9 @@ td{
 .pattern1{
     margin: 30px 0 15px 0;
     padding: 15px 30px;
-    font-size: 18px;
+    font-size: 16px;
     border-radius: 30px;
-    line-height: 100%;
+    line-height: 16px;
 }
 .pattern1:hover{
     background-color:#d73143;
@@ -493,13 +455,13 @@ td{
     margin: 75px 0 0 0;
 }
 .lecturer{
-    width: 720px;
-    margin: 0 auto 75px auto;
+    margin: 0 20px 45px 20px;
     padding: 0;
 }
 .lecturer-photo img{
-    width:320px;
+    width:60%;
     border-radius:50%;
+    text-align:center;
 }
 .lecturer-photo{
     text-align: center;
@@ -507,7 +469,7 @@ td{
 .lecturer-eng{
     margin: 0;
     padding: 15px 0 0 0;
-    font-size: 14px;
+    font-size: 80%;
     line-height: 150%;
     text-align: center;
     color: #d73143;
@@ -519,11 +481,10 @@ td{
 .lecturer-jp{
     margin: 0;
     padding: 10px 0 5px 0;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold;
     line-height: 100%;
-    letter-spacing: 1px;
-    /* text-align: center; */
+    text-align: center;
 }
 .lecturer-jp span{
     font-size: 14px;
@@ -545,30 +506,41 @@ td{
 }
 .lecturer li{
     padding: 0 0 5px 0;
-    letter-spacing: 1px;
+    font-size:14.4px;
 }
 .lecturer-list{
     text-align:left;
 }
-footer ul{
-    font-size:18px;
-    padding: 2px 0;
-    margin: 0;
-}
+
 footer ul li{
+    width: 50%;
+    float: left;
     list-style: none;
-    padding: 0 5px;
-    font-size: 12px;
-    display:inline;
+    margin:0;
+    padding: 0;
+    font-size: 14.4px;
     letter-spacing: 1px;
+    box-sizing: border-box;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
 }
 footer ul li a{
     text-decoration: none;
+    display:block;
+    padding: 15px 0 15px 0;
     color: #666;
 }
-#footer-box{
+#linkbox{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
     text-align: center;
-    padding: 25px 0 0 0;
+}
+#footer-box{
+    margin:0 auto;
+    padding:0;
+    text-align: center;
     border-top: solid 1px #d73143;
 }
 .clearfix:before, .clearfix:after{
@@ -588,19 +560,18 @@ footer ul li a{
     background: #666;
     transform: scale(0, 1);
     transform-origin: center top;
-    transition: transform .3s;
-
 }
 #copyright{
     font-size: 12px;
     text-align:center;
     color:#999;
-    padding: 10px 0 30px 0;
+    padding: 20px 0;
+    line-height:18px;
     font-family: 'Roboto Condensed', sans-serif;
 }
 .top{
-    margin:0;
-    padding: 20px 20px;
+    margin: 48px 0 0 0;
+    padding: 15px;
     font-size: 12px;
     line-height: 100%;
     letter-spacing: 1px;
@@ -618,9 +589,9 @@ footer ul li a{
 }
 .title{
     text-align:center;
-    margin: 60px 0 70px 0;
+    margin: 45px 0 45px 0;
     padding: 0;
-    font-size: 60px;
+    font-size: 38.4px;
     font-weight: normal;
     line-height: 100%;
     text-align: center;
@@ -629,22 +600,20 @@ footer ul li a{
 }
 #wrapper{
     margin:0;
-    padding: 50px 90px 75px 90px;
-    background: #eee;
+    padding:0;
 }
 .container{
     margin: 0;
-    padding: 75px 0 1px 0;
-    background: #fff;
+    padding: 0 0 1px 0;
 }
 .main-content{
-    width: 640px;
-    margin: 0 auto 90px auto;
-    padding: 0;
+    margin: 0 25px 60px 25px;
+    padding:0;
 }
 .sub-head{
     color:#d73143;
-    font-size:25px;
+    font-size:16px;
+    margin-top: 20px;
     text-align:center;
     letter-spacing: 5px;
     font-family: 'Roboto Condensed', sans-serif;
@@ -654,22 +623,29 @@ footer ul li a{
     text-align:center;
     margin: 5px 0 45px 0;
 }
+.law-table{
+    width:100%;
+}
 .law-table th{
     border-bottom:1px solid #D73343;
+    width:100%;
     color:black;
     background-color:white;
     text-align:left;
-    width: 210px;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 160%;
     letter-spacing: 1px;
-    padding: 15px 0;
+    padding: 0 0 3px 0;
     text-align: left;
+    margin:0;
+    display:block;
 }
 .law-table td{
-    font-size: 16px;
-    padding: 15px 0 15px 20px;
+    font-size: 15px;
+    padding: 8px 0 15px 0;
+    display:block;
     letter-spacing: 1px;
+    border-bottom:none;
     line-height: 160%;
 }
 .entry-table{
@@ -680,15 +656,17 @@ footer ul li a{
     color:black;
     border-bottom: solid 1px #ccc;
     text-align:left;
-    width: 200px;
     font-size: 16px;
-    padding: 15px 15px 5px 0;
-    line-height: 180%;
+    padding: 15px 0px 5px 0;
+    line-height: 100%;
     letter-spacing: 1px;
+    display:flex;
+    justify-content:space-between;
+    width:100%;
 }
 .required{
     background: #d73143;
-    font-size: 12px;
+    font-size: 9.6px;
     color:#fff;
     text-align:right;
     padding: 1px 2px 2px 2px;
@@ -696,6 +674,8 @@ footer ul li a{
 .contact-input{
     padding: 15px 0 5px 5px;
     border-bottom:none;
+    display:block;
+    width:100%;
 }
 input[type="text"] {
     width:100%;
@@ -729,18 +709,15 @@ input[type="submit"]{
 }
 .p-text{
     font-size:14px;
-    line-height: 180%;
-    letter-spacing: 1px;
-
 }
 .p-text a{
     color:#d73143;
 }
 .pattern2{
-    width: 300px;
+    width: 80%;
     margin: 15px 0 30px 0;
     padding: 20px 0;
-    font-size: 20px;
+    font-size: 16px;
     cursor:pointer;
 }
 .pattern2:hover{
@@ -758,11 +735,11 @@ input[type="submit"]{
     background-position: -40px 0;
 }
 .click{
-    background:transparent url("images/btn.png");
-    background-size: auto 40px;
+    background:transparent url("images/btn.png") no-repeat;
+    background-size: auto 35px;
     display: block;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     position: absolute;
     top: 10px;
     right: 10px;
@@ -795,34 +772,6 @@ input[type="submit"]{
     display:none;
 }
 
-/* 山崎追加
-footerのhoverアクションです */
-#linkbox a {
-    position: relative;
-    text-decoration: none;
-}
-
-#linkbox a::after {
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    content: '';
-    width: 100%;
-    height: 1px;
-    background: #666;
-    /* scale(0,1) とすることで横幅を0にしています */
-    transform: scale(0, 1);
-    transform-origin: center top;
-    /* 0.3秒かけて横幅を伸ばします */
-    transition: transform .3s;
-}
-
-/* hoverしたらscale(1,1)に設定します */
-#linkbox a:hover::after {
-    transform: scale(1, 1);
-}
-
-/* 山崎追加 */
 header.scroll {
     position: fixed;
     top: 0;

@@ -3,23 +3,50 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="stylesheet" href="stylesheet.css" />
+  <link media="screen and (min-device-width:751px)" href="stylesheet.css" type="text/css" rel="stylesheet">
+  <link media="only screen and (max-device-width:750px)" href="smart.css" type="text/css" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-  <title>プライバシーポリシー｜株式会社LS Creation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+  <!-- 山崎追加：script.jsを読み込む -->
+  <script src="script.js"></script>
+  <title>ケンペネEnglish｜株式会社LS Creation</title>
 </head>
 
 <body>
   <div id="wrap">
     <header>
       <div class="header-wrapper">
-        <img class="logo" src="images/logo.png" />
-        <img class="info-button" src="images/btn.png" />
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png" /></a>
+        </div>
+        <div class="info-box">
+          <!-- 山崎追加：aタグに変更 -->
+          <a class="click"></a>
+          <div class="drawr">
+            <nav>
+              <ul class="menu-list">
+                <li><a href="law.html">特定商取引法に関する表示<br><span>law</span></a></li>
+                <li><a href="privacy.html">プライバシーポリシー<br><span>privacy</span></a></li>
+                <li><a href="contact.html">お申し込み・お問い合わせ<br><span>contact</span></a></li>
+                <li><a href="trial.html">無料体験レッスン<br><span>free</span></a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
       </div>
     </header>
 
     <div class="main">
-      <div class="main-photo">
-        <img class="main-photo" src="images/copy.png" />
+      <div class="pc-photo">
+        <img src="images/copy.png" />
+      </div>
+      <div class="sp-photo">
+        <img src="images/copy_sp.png" />
       </div>
       <div class="link">
         <a href="trial.html" class="btn size1">無料体験レッスン受付中</a>
@@ -31,7 +58,6 @@
   </div>
   <div class="content2-wrapper">
     <div class="content2">
-      <img class="content2-photo" src="images/img_01.jpg" />
       <div class="text-wrapper">
         <div class="text-box">
           <div class="parenthesis">
@@ -45,6 +71,7 @@
           </div>
         </div>
       </div>
+      <img class="content2-photo" src="images/img_01.jpg" />
     </div>
   </div>
   <div class="sub-Title">Feature</div>
@@ -142,13 +169,13 @@
       <span>簡単１分フォーム入力はこちら</span>
     </div>
     <div class="contact-text">
-      人気芸人さん司会による特別動画コンテンツで、<br>楽しみながらレッスンを無料体験！
+      人気芸人さん司会による特別動画コンテンツで、<span class="pc"><br></span>楽しみながらレッスンを無料体験！
     </div>
     <div class="contact-button">
       <a href="" class="btn size2">無料体験レッスン受付中</a>
     </div>
     <div class="caution">
-      <p>*ご登録いただくサービスは、すべて無制限、0円でコンテンツをご覧いただけます。<br>追加請求などはございませんので、ご安心ください。</p>
+      ※ご登録いただくサービスは、すべて無制限、0円でコンテンツをご覧いただけます。<span class="pc"><br></span>追加請求などはございませんので、ご安心ください。
     </div>
   </div>
   <div class="fact">
@@ -182,9 +209,9 @@
       <div class="result-title">Result</div>
       <hr class="border" />
       <div class="sub">ケンペネEnglishで得られるもの</div>
-      <p>本講座のベースは<br>「700単語」「６つの発音」「１つの文法」とシンプルです。</p>
-      <p>そのため、英語が伝わる楽しさ、相手の会話が分かる楽しさ、<br>これらを体感しながら学習を続けることができます。</p>
-      <p>英語に限らず、継続の秘訣は「楽しさ」を見出すことです。<br>そして、英語が上達するとさらに楽しみを増やすことができます。</p>
+      <p>本講座のベースは<span class="pc"><br></span>「700単語」「６つの発音」「１つの文法」とシンプルです。</p>
+      <p>そのため、英語が伝わる楽しさ、相手の会話が分かる楽しさ、<span class="pc"><br></span>これらを体感しながら学習を続けることができます。</p>
+      <p>英語に限らず、継続の秘訣は「楽しさ」を見出すことです。<span class="pc"><br></span>そして、英語が上達するとさらに楽しみを増やすことができます。</p>
     </div>
   </div>
   <div class="voice">
@@ -231,13 +258,13 @@
       <span>簡単１分フォーム入力はこちら</span>
     </div>
     <div class="contact-text">
-      <p>人気芸人さん司会による特別動画コンテンツで、<br>楽しみながらレッスンを無料体験！</p>
+      人気芸人さん司会による特別動画コンテンツで、<span class="pc"><br></span>楽しみながらレッスンを無料体験！
     </div>
     <div class="contact-button">
       <a href="" class="btn size2">無料体験レッスン受付中</a>
     </div>
     <div class="caution">
-      <p>*ご登録いただくサービスは、すべて無制限、0円でコンテンツをご覧いただけます。<br>追加請求などはございませんので、ご安心ください。</p>
+      ※ご登録いただくサービスは、すべて無制限、0円でコンテンツをご覧いただけます。<span class="pc"><br></span>追加請求などはございませんので、ご安心ください。
     </div>
   </div>
   <div class="course">
@@ -249,23 +276,23 @@
       <table>
         <tbody>
           <tr>
-            <th>期間</th>
-            <td>６０日間</td>
+            <th>期　間</th>
+            <td>60日間</td>
           </tr>
           <tr>
             <th>受講頻度</th>
-            <td>１日１回</td>
+            <td>1日1回</td>
           </tr>
           <tr>
-            <th>金額</th>
-            <td>１９８,０００円</td>
+            <th>金　額</th>
+            <td>198,000円</td>
           </tr>
           <tr>
             <th>講座内容</th>
             <td>
-              ・1日ずつ学ぶ厳選された６０の実践動画講座
+              ・1日ずつ学ぶ厳選された60の実践動画講座
               <br>
-              ・６０日間のサポート体制
+              ・60日間のサポート体制
               <br>
               ・毎日の課題提出とサポート講師によるフィードバック
             </td>
@@ -275,7 +302,7 @@
     </table>
   </div>
   <div class="contact-btn">
-    <a href="" class="button pattern1">お問い合わせ・お申し込み</a>
+    <a href="contact.html" class="button pattern1">お問い合わせ・お申し込み</a>
   </div>
   <div class="lecturer">
     <div class="sub-Title space">Lecturer</div>
@@ -288,16 +315,18 @@
     <div class="lecturer-jp">ケンペネールしずこ<br>
       <span>日本名：瀬川静子（せがわしずこ）</span>
     </div>
-    <p>京都府出身 京都府在住。<br>「ケンペネール」は、ベルギー人の夫の苗字。</p>
-    <p>
-      高校を中退し、結婚してハワイへ移住。英語が全く話せないまま日本に帰国。8人の子宝に恵まれ、「親が英語を話せないと子供も話せない」という自身の考えのもと、英語を学び始め、独自メソッドで英語をマスター。その後全く対策をせずにTOEIC925点、英検１級を取得。47歳で大検（現・高卒認定試験）を取得。
-    </p>
-    <p>
-      51歳の頃、8人の子育て「ママ」から「同時通訳になろう！」と決意。1年後にイベント同時通訳としてデビュー、現在イベント同時通訳のリーダーとして世界の名だたる著名人の通訳を行なっている。同時通訳者の育成にも関わり、有能な通訳者を輩出。
-    </p>
-    <p>
-      メンターコーチ、スピーカー、通訳、翻訳などの多様な分野で活動しながら、50代女子の「子育て後の人生」を、女性観点からサポートしている。自身の経験と女性観点での起業、ゴール設定、夢実現方法の提唱者。自身の子供8人全員が海外留学せずに、ケンペネEnglishのみで全員にネイティブ英会話を習得し、TOEIC980点、TOEFL118点を取得、英検1級優秀賞を受賞。娘も通訳業をしている。
-    </p>
+    <div class="lecturer-text">
+      <p>京都府出身 京都府在住。<br>「ケンペネール」は、ベルギー人の夫の苗字。</p>
+      <p>
+        高校を中退し、結婚してハワイへ移住。英語が全く話せないまま日本に帰国。8人の子宝に恵まれ、「親が英語を話せないと子供も話せない」という自身の考えのもと、英語を学び始め、独自メソッドで英語をマスター。その後全く対策をせずにTOEIC925点、英検１級を取得。47歳で大検（現・高卒認定試験）を取得。
+      </p>
+      <p>
+        51歳の頃、8人の子育て「ママ」から「同時通訳になろう！」と決意。1年後にイベント同時通訳としてデビュー、現在イベント同時通訳のリーダーとして世界の名だたる著名人の通訳を行なっている。同時通訳者の育成にも関わり、有能な通訳者を輩出。
+      </p>
+      <p>
+        メンターコーチ、スピーカー、通訳、翻訳などの多様な分野で活動しながら、50代女子の「子育て後の人生」を、女性観点からサポートしている。自身の経験と女性観点での起業、ゴール設定、夢実現方法の提唱者。自身の子供8人全員が海外留学せずに、ケンペネEnglishのみで全員にネイティブ英会話を習得し、TOEIC980点、TOEFL118点を取得、英検1級優秀賞を受賞。娘も通訳業をしている。
+      </p>
+    </div>
     <div class="lecturer-list">
       <div class="lecturer-sub">同時通訳経歴</div>
       <ul>
@@ -322,14 +351,14 @@
 </body>
 <footer>
   <div id="footer-box">
-    <ul>
+    <ul id="linkbox" class="clearfix">
       <li><a href="law.html">特定商取引に関する表示</a></li>
       <li><a href="privacy.html">プライバシーポリシー</a></li>
       <li><a href="contact.html">お申し込み・お問い合わせ</a></li>
       <li><a href="trial.html">無料体験レッスン</a></li>
     </ul>
   </div>
-  <div id="copyright">Copyright © LS Creation Inc. All Rights Reserved.</div>
 </footer>
+<div id="copyright">Copyright © LS Creation Inc. All Rights Reserved.</div>
 
 </html>
